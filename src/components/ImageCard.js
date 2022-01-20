@@ -1,5 +1,6 @@
 import React from "react";
 import moment from "moment";
+import LikeButton from "./LikeButton";
 
 const ImageCard = ({ image }) => {
   const truncate = (input) =>
@@ -13,6 +14,7 @@ const ImageCard = ({ image }) => {
         <p className="text-sm">
           {moment(image.data[0].date_created).format("MMMM Do YYYY")}
         </p>
+        <LikeButton />
         <p className="text-sm">{truncate(image.data[0].description)}</p>
       </div>
     );

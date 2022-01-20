@@ -2,3 +2,25 @@
 @tailwind components;
 @tailwind utilites;
 
+.like-button {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    background: #ddd;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    display: block;
+    margin-bottom: 40px;
+    border-bottom: 2px #bbb solid;
+    transition: background .1s;
+    transition: border-bottom-color .1s;
+}
+
+.like-button.liked {
+    background: #4267b2;
+    border-bottom-color: #375695;
+    color: #fff;
+}
