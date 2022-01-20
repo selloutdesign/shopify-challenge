@@ -9,7 +9,9 @@ const ImageCard = ({ image }) => {
   if (image.hasOwnProperty("links")) {
     return (
       <div className="rounded overflow-hidden shadow-lg">
-        <img src={image.links[0].href} alt="" className="w-full" />
+        <div className="image-container">
+          <img src={image.links[0].href} alt="" className="sq-img" />
+        </div>
         <p className="text-gray-900 mt-2 text-lg">{image.data[0].title}</p>
         <p className="text-sm">
           {moment(image.data[0].date_created).format("MMMM Do YYYY")}

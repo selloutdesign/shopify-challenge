@@ -24,3 +24,25 @@
     border-bottom-color: #375695;
     color: #fff;
 }
+
+.image-container {
+    position: relative;
+    width: 100%;
+    min-height: 250px;
+    overflow: hidden;
+}
+
+.sq-img {
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* img.landscape {
+    height: 100%;
+    width: auto;
+} */
