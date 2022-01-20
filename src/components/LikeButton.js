@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { ThumbUpIcon } from "@heroicons/react/solid";
 
 // TODO record likes to local storage by passing image id
