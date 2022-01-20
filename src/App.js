@@ -21,6 +21,10 @@ function App() {
 
   return (
     <div className="container mx-auto">
+      <h1 className="text-7xl text-center mt-32">
+        Shopify Internship Challenge
+      </h1>
+      <p className="text-2xl text-center mt-12">Created By Josh Sells</p>
       <ImageSearch searchText={(text) => setTerm(text)} />
       {!isLoading && images.length === 0 && (
         <h1 className="text-5xl text-center mx-auto mt-32">No Images Found</h1>
