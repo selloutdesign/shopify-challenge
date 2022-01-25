@@ -12,12 +12,20 @@ const ImageCard = ({ image }) => {
         <div className="image-container">
           <img src={image.links[0].href} alt="" className="sq-img" />
         </div>
-        <p className="text-gray-900 mt-2 text-lg">{image.data[0].title}</p>
-        <p className="text-sm">
-          {moment(image.data[0].date_created).format("MMMM Do YYYY")}
-        </p>
-        <LikeButton />
-        <p className="text-sm">{truncate(image.data[0].description)}</p>
+        <div className="grid grid-cols-5 p-5">
+          <div className="col-span-4">
+            <p className="text-gray-900 mt-2 text-lg">{image.data[0].title}</p>
+            <p className="text-sm">
+              {moment(image.data[0].date_created).format("MMMM Do YYYY")}
+            </p>
+          </div>
+          <div className="col-span-1 text-center	">
+            <LikeButton />
+          </div>
+          <div className="col-span-5 pt-1">
+            <p className="text-sm">{truncate(image.data[0].description)}</p>
+          </div>
+        </div>
       </div>
     );
   }
